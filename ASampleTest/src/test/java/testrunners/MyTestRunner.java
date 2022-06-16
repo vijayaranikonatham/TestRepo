@@ -10,12 +10,11 @@ import io.cucumber.junit.CucumberOptions;
 		//features = {"src/test/resources/AppFeatures"},
 		features = {"src\\test\\resources\\parallel\\LoginPage.feature"},
 		glue = {"parallel"},
-		plugin = {"pretty",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"timeline:test-output-thread/"
+		plugin = {"pretty","html:target/cucumberreports"},
+		monochrome=true
 
 				
-		}
+		
 		
 		)
 
